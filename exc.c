@@ -38,7 +38,7 @@ int handleBuiltin(char **cmd, int h)
  * @argv:Program Name
  * Return: 1 Case Command Null, -1 Wrong Command and 0 Command Excuted
  */
-int check_cmd(char **tokens, char ln, int co, char **argv)
+int check_cmd(char **tokens, char *ln, int co, char **argv)
 {
 	int sta;
 	pid_t pid;

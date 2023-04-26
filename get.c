@@ -33,7 +33,7 @@ char *buff = malloc(buffsize);
 		}
 		if (n >= buffsize)
 		{
-			buff = _realloc(buff, buffsize, buffsize + 1);
+			buff = realloc_(buff, buffsize, buffsize + 1);
 			if (buff == NULL)
 			{
 				return (NULL);

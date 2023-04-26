@@ -29,7 +29,7 @@ void *realloc_(void *p, unsigned int oldSize, unsigned int newSize)
 	else
 	{
 		_memcpy(res, p, oldSize);
-		free(ptr);
+		free(p);
 	}
 	return (res);
 

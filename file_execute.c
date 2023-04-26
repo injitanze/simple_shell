@@ -48,14 +48,14 @@ void treatFile(char *ln, int counter, FILE *fp, char **argv)
 		{
 			exit_bull(cm, ln, fp);
 		}
-		else if (check_builtin(cmd) == 0)
+		else if (checkBuiltin(cm) == 0)
 		{
-			st = handleBuiltin(cm, s);
-			free(cmd);
+			s = handleBuiltin(cm, s);
+			free(cm);
 		}
 		else
 		{
-			st = check_cmd(cm, ln, counter, argv);
+			s = check_cmd(cm, ln, counter, argv);
 			free(cm);
 		}
 }
