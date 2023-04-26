@@ -1,10 +1,10 @@
 #include "alxshell.h"
 
 /**
- * handleBuiltin - Handle builtin cmd
- * @cmd: Parsed Command
- * @h:statue of last excute
- * Return: -1 Fail and 0 sucess
+ * handleBuiltin - Handle builtin cmd.
+ * @cmd: Parsed Command.
+ * @h:statue of last excute.
+ * Return: -1 Fail and 0 sucess.
  */
 
 int handleBuiltin(char **cmd, int h)
@@ -30,13 +30,13 @@ int handleBuiltin(char **cmd, int h)
 	return (-1);
 }
 /**
- * check_cmd - Excute Simple Shell Command (Fork,Wait,Excute)
+ * check_cmd - Excute Simple Shell Command (Fork,Wait,Excute).
  *
- * @tokens:Parsed cmd
- * @ln: User input
- * @co:Shell excution time case of command not found
- * @argv:Program Name
- * Return: 1 Case Command Null, -1 Wrong Command and 0 Command Excuted
+ * @tokens:Parsed cmd.
+ * @ln: User input.
+ * @co:Shell excution time case of command not found.
+ * @argv:Program Name.
+ * Return: 1 Case Command Null, -1 Wrong Command and 0 Command Excuted.
  */
 int check_cmd(char **tokens, char ln, int co, char **argv)
 {
@@ -75,9 +75,9 @@ int check_cmd(char **tokens, char ln, int co, char **argv)
 	return (0);
 }
 /**
- * signa - Handle ^C
- * @sign:Captured Signal
- * Return: Void
+ * signa - Handle ^C.
+ * @sign:Captured Signal.
+ * Return: Void.
  */
 void signa(int sign)
 {

@@ -1,8 +1,8 @@
 #include "alxshell.h"
 
 /**
- * _putchar - write character to stdout
- * @c: character to print
+ * _putchar - Write character to stdout.
+ * @c: character to print.
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -12,7 +12,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 /**
- * _strncpy - copie a string
+ * _strncpy - Copie a string.
  * @dest:char
  *  @src:char
  * @n:int
@@ -38,7 +38,7 @@ t = 0;
 }
 
 /**
- * _strlen - lenght of string
+ * _strlen - Lenght of string.
  * @s:char
  * Return:int
  */
@@ -55,7 +55,7 @@ return (t);
 }
 
 /**
- * _atoi - convert to a int
+ * _atoi - Convert to a int
  * @s:string
  * Return:int
  */
@@ -80,7 +80,7 @@ int n, t, y, z;
 	return (y);
 }
 /**
- * _puts - print a string
+ * _puts - print a string.
  * @st:pointer char
  * return:void
  */

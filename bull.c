@@ -1,10 +1,10 @@
 #include "alxshell.h"
 
 /**
- * histoDis - Display the history Of User input
- * @cmd: Command
- * @h:Statue Of the last excute
- * Return: 0 Succes -1 Fail
+ * histoDis - Display the history Of User input.
+ * @cmd: Command.
+ * @h:Statue Of the last excute.
+ * Return: 0 Succes -1 Fail.
  */
 int histoDis(__attribute__((unused))char **cmd, __attribute__((unused)) int h)
 {
@@ -36,8 +36,8 @@ int histoDis(__attribute__((unused))char **cmd, __attribute__((unused)) int h)
 	return (0);
 }
 /**
- * print_echo - Excute echo
- * @cmd: Command
+ * print_echo - Excute echo.
+ * @cmd: Command.
  * Return: 0 Succes and  -1 Fail.
  */
 int print_echo(char **cmd)

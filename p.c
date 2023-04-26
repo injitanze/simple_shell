@@ -1,8 +1,8 @@
 #include "alxshell.h"
 
 /**
- * parse_cmd - Parse Line Of Input
- * @input: input to perse
+ * parse_cmd - Parse Line Of Input.
+ * @input: input to perse.
  * Return: Array Of Char (Parsed):Simple Shell
  */
 char **parse_cmd(char *input)

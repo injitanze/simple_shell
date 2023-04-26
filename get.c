@@ -1,8 +1,8 @@
 #include "alxshell.h"
 
 /**
-* getline_ - Read input by User from Stdin
-* Return: Input
+* getline_ - Read input by User from Stdin.
+* Return: Input.
 */
 char *getline_()
 {
@@ -48,7 +48,7 @@ char *buff = malloc(buffsize);
 /**
  * hash - Remove everything after #
  * @buff: input;
- * Return:void
+ * Return:void.
  */
 void hash(char *buff)
 {

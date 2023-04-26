@@ -1,7 +1,7 @@
 #include "alxshell.h"
 /**
- * _strcpy - src to destination char
- * @dest:Destination
+ * _strcpy - src to destination char.
+ * @dest:Destination.
  * @src:src
  * Return: Copies Of char *
  */
@@ -17,10 +17,10 @@ dest[n] = '\0';
 return (dest);
 }
 /**
- * _strcat - To concatinate  two string
- * @dest: First Str
- * @src: Second Str
- * Return: concatination strings
+ * _strcat - To concatinate  two string.
+ * @dest: First Str.
+ * @src: Second Str.
+ * Return: concatination strings.
  */
 char *_strcat(char *dest, char *src)
 {
@@ -41,9 +41,9 @@ char *_strcat(char *dest, char *src)
 	return (sc);
 }
 /**
- * _strchr - Locate Char In String
- * @s:String Search In
- * @c:Char To Search For
+ * _strchr - Locate Char In String.
+ * @s:String Search In.
+ * @c:Char To Search For.
  * Return: Pointer To Char*
  */
 char *_strchr(char *s, char c)
@@ -61,11 +61,11 @@ return (s);
 }
 /**
  * _strncmp - Compare Amount (n) Of Characters Of Two Strings.
- * @ss: str
- * @ss1: str
+ * @ss: str.
+ * @ss1: str.
  * @n: amount Of Characters To Compare.
  *
- * Return: 1 If The Strings Don't Match Otherwise 0
+ * Return: 1 If The Strings Don't Match Otherwise 0.
  */
 int _strncmp(const char *ss, const char *ss1, size_t n)
 {
@@ -83,9 +83,9 @@ int _strncmp(const char *ss, const char *ss1, size_t n)
 	return (0);
 }
 /**
- * _strdup - String duplication
- * @st:str
- * Return: String duplicatio
+ * _strdup - String duplication.
+ * @st:str.
+ * Return: String duplicatio.
  */
 char *_strdup(char *st)
 {
