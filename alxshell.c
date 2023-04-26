@@ -1,9 +1,9 @@
 #include "alxshell.h"
 
 /**
- * main - Simple shell
- * @argc: Argument count
- * @argv:Argument vector
+ * main - Simple shell.
+ * @argc: Argument count.
+ * @argv:Argument vector.
  * Return: Exit value by status.
  */
 
@@ -47,10 +47,10 @@ int main(__attribute__((unused))int argc, char **argv)
 	return (sta);
 }
 /**
- * checkBuiltin - check the builtin
+ * checkBuiltin - Check the builtin.
  *
- * @cmd:command to be  check
- * Return: 0 when succesfull and  -1  when fail
+ * @cmd:command to be  check.
+ * Return: 0 when succesfull and  -1  when fail.
  */
 int checkBuiltin(char **cmd)
 {
@@ -76,9 +76,9 @@ int checkBuiltin(char **cmd)
 	return (-1);
 }
 /**
- * creatEnvi - Creat an array of enviroment variable
- * @envi: Array of enviroment Var
- * Return: Void
+ * creatEnvi - Creat an array of enviroment variable.
+ * @envi: Array of enviroment Var.
+ * Return: Void.
  */
 void creatEnvi(char **envi)
 {

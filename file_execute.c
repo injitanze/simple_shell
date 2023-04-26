@@ -1,9 +1,9 @@
 #include "alxshell.h"
 /**
- * readFile - Read cmd from file
- * @fname:Filename
- * @argv:Program Name
- * Return: -1 or  0
+ * readFile - Read cmd from file.
+ * @fname:Filename.
+ * @argv:Program Name.
+ * Return: -1 or  0.
  */
 
 void readFile(char *fname, char **argv)
@@ -30,12 +30,12 @@ void readFile(char *fname, char **argv)
 	exit(0);
 }
 /**
- * treatFile - PARSE Check Command Fork Wait Excute in Line of File
- * @ln: line from file
- * @counter:Error counter
- * @fp:File Descriptor
- * @argv:Program Name
- * Return : Excute  line void
+ * treatFile - PARSE Check Command Fork Wait Excute in Line of File.
+ * @ln: line from file.
+ * @counter:Error counter.
+ * @fp:File Descriptor.
+ * @argv:Program Name.
+ * Return : Excute  line void.
  */
 void treatFile(char *ln, int counter, FILE *fp, char **argv)
 {
@@ -60,11 +60,11 @@ void treatFile(char *ln, int counter, FILE *fp, char **argv)
 		}
 }
 /**
- * exit_bull - Exit Shell Case Of File
- * @ln: Line from file
- * @cmd: Parsed Command
- * @fd:File Descriptor
- * Return : Case Of exit in A file line
+ * exit_bull - Exit Shell Case Of File.
+ * @ln: Line from file.
+ * @cmd: Parsed Command.
+ * @fd:File Descriptor.
+ * Return : Case Of exit in A file line.
  */
 void exit_bull(char **cmd, char *ln, FILE *fd)
 {

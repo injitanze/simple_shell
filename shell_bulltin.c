@@ -1,11 +1,11 @@
 #include "alxshell.h"
 /**
- * exit_bul - Exit statue of shell
- * @cmd: Parsed cmd
- * @input: User Input
- * @argv:Argument Name
- * @c: Count
- * Return: Void
+ * exit_bul - Exit statue of shell.
+ * @cmd: Parsed cmd.
+ * @input: User Input.
+ * @argv:Argument Name.
+ * @c: Count.
+ * Return: Void.
  */
 void  exit_bul(char **cmd, char *input, char **argv, int c)
 {
@@ -36,9 +36,9 @@ void  exit_bul(char **cmd, char *input, char **argv, int c)
 
 
 /**
- * changeDir - Change Dirctorie
- * @cmd: Command
- * @h: Statue of the last command excuted
+ * changeDir - Change Dirctory.
+ * @cmd: Command.
+ * @h: Statue of the last command excuted.
  * Return: 0 Succes and 1 Failed (For Old Pwd Always 0 Case No Old PWD).
  */
 int changeDir(char **cmd, __attribute__((unused))int h)
@@ -69,9 +69,9 @@ int changeDir(char **cmd, __attribute__((unused))int h)
 	return (0);
 }
 /**
- * disEnv - Display enviroment Var
+ * disEnv - Display enviroment Var.
  * @cmd:cmd
- * @h: Last command excuted
+ * @h: Last command excuted.
  * Return:Always 0
  */
 int disEnv(__attribute__((unused)) char **cmd, __attribute__((unused)) int h)
@@ -88,9 +88,9 @@ size_t n;
 	return (0);
 }
 /**
- * displayHelp - Displaying help for builtin
+ * displayHelp - Displaying help for builtin.
  * @cmd: Command
- * @h: last Command Excuted
+ * @h: last Command Excuted.
  * Return: 0 Succes and -1 Fail
  */
 int displayHelp(char **cmd, __attribute__((unused))int h)
@@ -117,10 +117,10 @@ int displayHelp(char **cmd, __attribute__((unused))int h)
 	return (0);
 }
 /**
- * echoBuiltin - Excute echo
- * @h:Statue Of Last Command Excuted
- * @cmd: Parsed Command
- * Return: Always 0 Or Excute Normal Echo
+ * echoBuiltin - Excute echo.
+ * @h:Statue Of Last Command Excuted.
+ * @cmd: Parsed Command.
+ * Return: Always 0 Or Excute Normal Echo.
  */
 int echoBuiltin(char **cmd, int h)
 {

@@ -1,7 +1,7 @@
 #include "alxshell.h"
 /**
- * history - Filled file by User Input
- * @input: Input
+ * history - Filled file by User Input.
+ * @input: Input.
  * Return: -1 Fail and 0 Succes.
  */
 int history(char *input)

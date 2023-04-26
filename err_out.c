@@ -1,9 +1,9 @@
 #include "alxshell.h"
 /**
- *  _prerror - To print custome error
- * @argv:Argument Name
- * @c:Error count
- * @cmd:Command
+ *  _prerror - To print custome error.
+ * @argv:Argument Name.
+ * @c:Error count.
+ * @cmd:Command.
  * Return: Void.
  */
 void _prerror(char **argv, int c, char **cmd)
