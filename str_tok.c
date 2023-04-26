@@ -1,8 +1,8 @@
 #includ "alxshell.h"
 /**
  * checkDelim - Checks if a Char match any Char *
- * @a: Char to check
- * @st: String to check
+ * @a: Char to check.
+ * @st: String to check.
  * Return: 1 Succes,and 0 Failed.
  */
 unsigned int checkDelim(char a, const char *st)
@@ -20,8 +20,8 @@ unsigned int checkDelim(char a, const char *st)
 /**
  * str_tok - Token to string into token
  * @st: String
- * @to: Delimiter
- * Return: Pointer to the next token Or NULL
+ * @to: Delimiter.
+ * Return: Pointer to the next token Or NULL.
  */
 char *str_tok(char *st, const char *to)
 {

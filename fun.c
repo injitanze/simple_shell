@@ -55,8 +55,8 @@ return (t);
 }
 
 /**
- * _atoi - Convert to a int
- * @s:string
+ * _atoi - Conv.ert to a int
+ * @s:string.
  * Return:int
  */
 int _atoi(char *s)
@@ -82,7 +82,7 @@ int n, t, y, z;
 /**
  * _puts - print a string.
  * @st:pointer char
- * return:void
+ * return:void.
  */
 void _puts(char *st)
 {
