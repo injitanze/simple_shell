@@ -7,7 +7,7 @@ extern char **env;
 
 /**  MACROS */
 
-#define BUFSIZE 100
+#define BUFSIZE 1024
 #define DELIM " \t\r\n\a"
 #define PRINTER(a) (write(STDOUT_FILENO, a, _strlen(a)))
 
@@ -60,7 +60,7 @@ void freeAll(char **input, char *ln);
 
 /** INPUT Function */
 
-void shell(void);
+void shell_prompt(void);
 void signa(int sign);
 char *getline_(void);
 
@@ -82,7 +82,7 @@ void exit_bull(char **cmd, char *ln, FILE *fd);
 
 void hash(char *buff);
 int history(char *input);
-int historyDisplay(char **cmd, int h);
+int histoDis(char **cmd, int h);
 int disEvn(char **cmd, int h);
 int changeDir(char **cmd, int h);
 int displayHelp(char **cmd, int h);
