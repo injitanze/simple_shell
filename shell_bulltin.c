@@ -89,9 +89,9 @@ size_t n;
 }
 /**
  * displayHelp - Displaying help for builtin.
- * @cmd: Command
+ * @cmd: Command.
  * @h: last Command Excuted.
- * Return: 0 Succes and -1 Fail
+ * Return: 0 Succes and -1 Fail.
  */
 int displayHelp(char **cmd, __attribute__((unused))int h)
 {

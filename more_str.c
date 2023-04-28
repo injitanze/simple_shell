@@ -1,10 +1,10 @@
 #include "alxshell.h"
 
 /**
- * _strcmp - compering two string
+ * _strcmp - compering two string.
  * @ss:first string
  * @ss1:first string
- * Return: 0 if identical Otherwise how much diffrent
+ * Return: 0 if identical Otherwise how much diffrent.
  */
 int _strcmp(char *ss, char *ss1)
 {
@@ -29,9 +29,9 @@ l2 = _strlen(ss1);
 	return (cmp);
 }
 /**
- * _isalpha - checking the alphabelt
- *@d: Character to check
- * Return: 1 If true and 0 if not
+ * _isalpha - checking the alphabelt.
+ *@d: Character to check.
+ * Return: 1 If true and 0 if not.
  */
 int _isalpha(int d)
 {

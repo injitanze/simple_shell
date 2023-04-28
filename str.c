@@ -84,8 +84,8 @@ int _strncmp(const char *ss, const char *ss1, size_t n)
 }
 /**
  * _strdup - String duplication.
- * @st:str.
- * Return: String duplicatio.
+ * @st:str
+ * Return: String duplication.
  */
 char *_strdup(char *st)
 {

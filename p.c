@@ -3,7 +3,7 @@
 /**
  * parse_cmd - Parse Line Of Input.
  * @input: input to perse.
- * Return: Array Of Char (Parsed):Simple Shell
+ * Return: Array Of Char (Parsed):Simple Shell.
  */
 char **parse_cmd(char *input)
 {

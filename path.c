@@ -1,8 +1,8 @@
 #include "alxshell.h"
 
 /**
- * path_cmd -  Search In $PATH for excutable command
- * @ln: Parsed Input
+ * path_cmd -  Search In $PATH for excutable command.
+ * @ln: Parsed Input.
  * Return: 1  Failure and  0  Success.
  */
 int path_cmd(char **ln)
@@ -30,9 +30,9 @@ int path_cmd(char **ln)
 	return (1);
 }
 /**
- * build - Build command
- * @token: Excutable command
- * @value: Dirctory conatining command
+ * build - Build command.
+ * @token: Excutable command.
+ * @value: Dirctory conatining command.
  *
  * Return: Parsed Full Path Of Command Or NULL Case Failed
  */

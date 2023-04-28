@@ -1,8 +1,8 @@
 #include "alxshell.h"
 /**
- * printNumber -Print nnsigned int putchar
- * @n: unisigned integer to print
- * Return: Void
+ * printNumber -Print nnsigned int putchar.
+ * @n: unisigned integer to print.
+ * Return: Void.
  */
 void printNumber(unsigned int n)
 {
@@ -14,9 +14,9 @@ void printNumber(unsigned int n)
 	_putchar(num % 10 + '0');
 }
 /**
- * printNumberIn -Print Number Putchar
- * @n:Integer number
- * Return: void
+ * printNumberIn -Print Number Putchar.
+ * @n:Integer number.
+ * Return: void.
  */
 void printNumberIn(int n)
 {
