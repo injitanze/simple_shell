@@ -54,7 +54,7 @@ char *build(char *token, char *value)
 	cm = _strcat(cm, "/");
 	cm = _strcat(cm, token);
 
-	return (cmd);
+	return (cm);
 }
 /**
  * getenv_ - Gets value Of enviroment var by name
@@ -68,11 +68,11 @@ char *getenv_(char *name)
 	int n, y, z;
 
 	ab = _strlen(name);
-	for (n = 0 ; env[n]; n++)
+	for (n = 0 ; environ[n]; n++)
 	{
-		if (_strncmp(name, env[n], ab) == 0)
+		if (_strncmp(name, environ[n], ab) == 0)
 		{
-			ac = _strlen(env[n]) - ab;
+			ac = _strlen(environ[n]) - ab;
 			value = malloc(sizeof(char) * ac);
 			if (!value)
 			{
@@ -82,9 +82,9 @@ char *getenv_(char *name)
 			}
 
 			z = 0;
-			for (y = ab + 1; env[n][y]; y++, z++)
+			for (y = ab + 1; environ[n][y]; y++, z++)
 			{
-				value[z] = env[n][y];
+				value[z] = environ[n][y];
 			}
 			value[z] = '\0';
 

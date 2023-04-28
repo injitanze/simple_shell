@@ -21,8 +21,8 @@ void printError(char *input, int counter, char **argv)
 	PRINTER(argv[0]);
 	PRINTER(": ");
 	h  = _itoa(counter);
-	PRINTER(er);
-	free(er);
+	PRINTER(h);
+	free(h);
 	PRINTER(": ");
 	PRINTER(input);
 	PRINTER(": not found\n");

@@ -84,7 +84,7 @@ void creatEnvi(char **envi)
 {
 	int n;
 
-	for (n = 0; env[n]; n++)
-		envi[n] = _strdup(env[n]);
+	for (n = 0; environ[n]; n++)
+		envi[n] = _strdup(environ[n]);
 	envi[n] = NULL;
 }

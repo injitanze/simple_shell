@@ -7,8 +7,8 @@
  */
 char **parse_cmd(char *input)
 {
-	char **tok;
-	char *toks;
+	char **toks;
+	char *tok;
 	int n, buff_size = BUFSIZE;
 
 	if (input == NULL)

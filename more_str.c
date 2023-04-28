@@ -54,7 +54,7 @@ char *_itoa(unsigned int t)
 	int l = 0, n = 0;
 	char *st;
 
-	l = intlen(t);
+	l = int_len(t);
 	st = malloc(l + 1);
 	if (!st)
 		return (NULL);
@@ -65,8 +65,8 @@ char *_itoa(unsigned int t)
 		t /= 10;
 		n++;
 	}
-	s[n] = (t % 10) + '0';
-	array_rev(st, l);
+	st[n] = (t % 10) + '0';
+	arrayRet(st, l);
 	st[n + 1] = '\0';
 	return (st);
 }
@@ -83,7 +83,7 @@ void arrayRet(char *arr, int len)
 
 	for (m = 0; m < (len / 2); m++)
 	{
-		temp = arr[i];
+		temp = arr[m];
 		arr[m] = arr[(len - 1) - m];
 		arr[(len - 1) - m] = temp;
 	}

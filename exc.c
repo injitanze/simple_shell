@@ -11,7 +11,7 @@ int handleBuiltin(char **cmd, int h)
 {
 	 bul_t bit[] = {
 		{"cd", changeDir},
-		{"env", disEvn},
+		{"env", disEnv},
 		{"help", displayHelp},
 		{"echo", echoBuiltin},
 		{"history", histoDis},
@@ -62,7 +62,7 @@ int check_cmd(char **tokens, char *ln, int co, char **argv)
 			path_cmd(tokens);
 		}
 
-		if (execve(*tokens, tokens, env) == -1)
+		if (execve(*tokens, tokens, environ) == -1)
 		{
 			printError(tokens[0], co, argv);
 			free(ln);

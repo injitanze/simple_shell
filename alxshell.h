@@ -3,7 +3,7 @@
 
 /**  env variable */
 
-extern char **env;
+extern char **environ;
 
 /**  MACROS */
 
@@ -83,7 +83,7 @@ void exit_bull(char **cmd, char *ln, FILE *fd);
 void hash(char *buff);
 int history(char *input);
 int histoDis(char **cmd, int h);
-int disEvn(char **cmd, int h);
+int disEnv(char **cmd, int h);
 int changeDir(char **cmd, int h);
 int displayHelp(char **cmd, int h);
 int echoBuiltin(char **cmd, int h);

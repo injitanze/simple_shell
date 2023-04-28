@@ -79,9 +79,9 @@ int disEnv(__attribute__((unused)) char **cmd, __attribute__((unused)) int h)
 size_t n;
 	int l;
 
-	for (n = 0; env[n] != NULL; n++)
+	for (n = 0; environ[n] != NULL; n++)
 	{
-		l = _strlen(env[n]);
+		l = _strlen(environ[n]);
 		write(1, environ[n], l);
 		write(STDOUT_FILENO, "\n", 1);
 	}
@@ -129,7 +129,7 @@ int echoBuiltin(char **cmd, int h)
 
 	if (_strncmp(cmd[1], "$?", 2) == 0)
 	{
-		printNumbeIn(h);
+		printNumberIn(h);
 		PRINTER("\n");
 	}
 	else if (_strncmp(cmd[1], "$$", 2) == 0)

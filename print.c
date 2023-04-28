@@ -30,5 +30,5 @@ void printNumberIn(int n)
 	if ((num / 10) > 0)
 		printNumber(num / 10);
 
-	_putchar(Num % 10 + '0');
+	_putchar(num % 10 + '0');
 }

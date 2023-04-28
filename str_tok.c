@@ -1,4 +1,4 @@
-#includ "alxshell.h"
+#include "alxshell.h"
 /**
  * checkDelim - Checks if a Char match any Char *
  * @a: Char to check.
